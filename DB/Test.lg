@@ -1,0 +1,23 @@
+
+                Tue Sep  8 16:36:23 2020
+[2020/09/08@16:36:23.647+2300] P-19880      T-22472 I DBUTIL   : (451)   prostrct create session begin for Subramanya.R on CON:. 
+[2020/09/08@16:36:23.652+2300] P-19880      T-22472 I DBUTIL   : (12862) Structure file C:\OpenEdgex86_1172\WRK\Training\Hexaware\DB\Test.st used to create database with blocksize 4096. 
+[2020/09/08@16:36:23.682+2300] P-19880      T-22472 I DBUTIL   : (334)   prostrct create session end. 
+[2020/09/08@16:36:23.695+2300] P-19880      T-22472 I DBUTIL   : (451)   procopy session begin for Subramanya.R on CON:. 
+[2020/09/08@16:36:23.750+2300] P-19880      T-22472 I DBUTIL   : (334)   procopy session end. 
+
+                Tue Sep  8 16:36:23 2020
+[2020/09/08@16:36:23.764+2300] P-19880      T-22472 I          : (451)   procopy get default SQL DBA session begin for Subramanya.R on CON:. 
+[2020/09/08@16:36:23.766+2300] P-19880      T-22472 I          : (15321) Before Image Log Initialization at block 0  offset 17026928. 
+[2020/09/08@16:36:23.876+2300] P-19880      T-22472 I          : (14867) Procopy -newinstance Created a new database GUID. 
+[2020/09/08@16:36:23.883+2300] P-19880      T-22472 I          : (15109) At Database close the number of live transactions is 0. 
+[2020/09/08@16:36:23.883+2300] P-19880      T-22472 I          : (15743) Before Image Log Completion at Block 0 Offset 2663. 
+[2020/09/08@16:36:23.910+2300] P-19880      T-22472 I          : (334)   procopy get default SQL DBA session end. 
+
+                Tue Sep  8 16:36:43 2020
+[2020/09/08@16:36:43.323+2300] P-25340      T-10344 I ABL      : (451)   Single-user session begin for Subramanya.R on CON:. 
+[2020/09/08@16:36:43.325+2300] P-25340      T-10344 I ABL      : (15321) Before Image Log Initialization at block 0  offset 2663. 
+[2020/09/08@16:36:43.343+2300] P-25340      T-10344 I ABL      : (7129)  Usr 0 set name to Subramanya.R. 
+[2020/09/08@21:57:19.218+2300] P-25340      T-10344 I ABL      : (15109) At Database close the number of live transactions is 0. 
+[2020/09/08@21:57:19.218+2300] P-25340      T-10344 I ABL      : (15743) Before Image Log Completion at Block 10 Offset 6209. 
+[2020/09/08@21:57:19.226+2300] P-25340      T-10344 I ABL      : (334)   Single-user session end. 

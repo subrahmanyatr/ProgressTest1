@@ -1,0 +1,78 @@
+On each of the following questions, please note any questions you would have to your manager
+(if the question is vague, etc..) as to clarify the requirement.
+Please answer each question and send back the resulting .p or answers.
+
+We do not require/expect that you will have Progress installed on your computer when answering
+these questions.  Write the code the best you can in any editor you wish (notepad is fine). We
+will not be doing syntax checks of the code, the goal is to check logic and basic Progress
+code knowledge.
+
+/*Basic Progress programming test*/
+
+/*Questions*/
+1)
+
+/*
+Table                         Dump          Field Index
+Name                          Name          Count Count
+----------------------------- -------- ---------- -----
+edi-outbound                  edi-outb          -     5
+
+Order Field-Name                Data Type   Flags Format          Initial
+----- ------------------------- ----------- ----- --------------- ----------
+  110 bo-no                     inte              99              0
+  150 bol-no                    char              x(20)
+  130 document                  inte        i     9999999         0
+   40 edi-txn-no                inte        i     >>>>>>>>9       0
+   10 entity-code               char        i     x(2)
+   70 entitynum                 inte        i     >999            0
+  120 order-no                  inte        i     >>>>>>9         0
+  590 xdock-entity              char              XX
+   30 send-date                 date              99/99/99        today
+
+pu    idx-order                       + entity-code
+                                      + order-no
+                                      + edi-txn-no
+
+Using the above table definition, write a .p that does the following:
+
+Accepts two inputs:
+  1) Character value containing an entity-code
+  2) Integer value containg an order-no
+
+
+Outputs a temp-table with a copy of all records matching the input criteria.
+
+Before creating the temp-table update each filtered edi-outbound record but only if the
+xdock-entity field is not blank.  Assign the  send-date field value to today's
+date if the record is not currently locked by another user.
+Write how you might handle the lock.
+*/
+
+
+2) Given the following string
+
+DEFINE VARIABLE vcMonths AS CHARACTER NO-UNDO.
+vcMonths = "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec".
+
+Write a snippet of code that will assign the string in reverse order (i.e. "Dec,Nov,Oct...") in
+to a new variable.
+
+3) Look at the attached program progtest.p
+-What can you tell me about the transaction scoping in this program
+-What improvements to the code can you make (attach improved code)
+
+4) Looking at the attached .csv file (cust-sales.csv)
+-Create a temp-table to store the data
+-Import the data from disk into the temp table
+-Sum the sales data by customer into a new temp-table
+-Export the resulting data to a new .csv file
+
+5) Given the attached .w file (prog-win.w)
+  This program contains a simple temp-table and free form browse to display the records.
+  There is one button 'delete' that needs the code written for it.
+  Write the code for the delete button, it needs to delete the selected row, first asking
+  the user if they are sure they want to delete the record.
+
+
+
